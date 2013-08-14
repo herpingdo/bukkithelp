@@ -1,4 +1,8 @@
 <?php
+	$f = str_replace(".php", "", basename($_SERVER["SCRIPT_NAME"]));
+////echo "PENIS PENIS PENIOS";
+	//include_once("");
+
 	$sitename = "Test";
 
 	function dropdown($name, $items, $active=false) {
@@ -41,5 +45,51 @@ EOF;
 EOF;
 
 		return $r . "\n";
+	}
+
+	function readall($file) {
+		//echo $file;
+		$txt = file_get_contents($file);
+		//echo $txt;
+		return explode("\n", $txt);
+	}
+
+	function tutorial($n) {
+		//echo $n;
+			$f = str_replace(".php", "", basename($_SERVER["SCRIPT_NAME"]));
+
+		//echo $f;
+		$string = "tutorials/{$f}/{$n}.txt";
+		//echo $string;
+		$cont = readall($string);
+		//var_dump($cont);
+		$ckc = 0;
+		$ret = "";
+		foreach ($cont as $line) {
+			if ($ckc < 2) {
+				$ckc++;
+				continue;
+			}
+			$ret .= $line . "\n";
+		}
+		return $ret;
+	}
+
+	function tutorial2($n, $cat) {
+		//echo $f;
+		$string = "tutorials/{$cat}/{$n}.txt";
+		//echo $string;
+		$cont = readall($string);
+		//var_dump($cont);
+		$ckc = 0;
+		$ret = "";
+		foreach ($cont as $line) {
+			if ($ckc < 2) {
+				$ckc++;
+				continue;
+			}
+			$ret .= $line . "\n";
+		}
+		return $ret;
 	}
 ?>

@@ -1,6 +1,5 @@
 <?php
-	include_once("vars.php");
-	$f = str_replace(".php", "", basename($_SERVER["SCRIPT_NAME"]));
+		include_once("vars.php");
 
 	echo <<<"EOF"
 <head>
