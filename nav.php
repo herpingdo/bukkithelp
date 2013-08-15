@@ -1,4 +1,11 @@
 <?php
+	include_once("vars.php");
+
+	$navappend = "";
+
+	if ($f == "tview") {
+		$navappend .= '<li class="active"><a href="#">Tutorial Viewer</a></li>';
+	}
 
 	$dropjava = dropdown("Java",array(
 		href("java.php", "Java Tutorials"),
@@ -25,11 +32,11 @@
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="{$hactive}"><a href="#">Home</a></li>
-      
+      <li class="{$hactive}"><a href="{$homeref}">Home</a></li>
       {$dropjava}
       {$drop1} 
       {$dropmc}
+      {$navappend}
     </ul>
     <form class="navbar-form navbar-right" action="" role="search">
       <div class="form-group">

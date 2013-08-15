@@ -3,7 +3,7 @@
 ////echo "PENIS PENIS PENIOS";
 	//include_once("");
 
-	$sitename = "Test";
+	$sitename = "BukkitHelp";
 
 	function dropdown($name, $items, $active=false) {
 		$cl = "";

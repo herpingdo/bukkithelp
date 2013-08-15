@@ -14,15 +14,22 @@ EOF;
 	$hactive = "";
 	$jactive = "";
 	$title = "{$sitename} | ";
+	$homeref = "index.php";
 	switch ($f) {
 		case "index":
 			$title .= "Index";
 			$hactive = "active";
+			$homeref = "#";
 			break;
 		case "java":
 			$title .= "Java Tutorials";
 			$jactive = "active";
 			break;
+		case "bukkit":
+			$title .= "Bukkit API Tutorials";
+			break;
+		case "tview":
+			$title .= "Tutorial Viewer";
 
 	}
 

@@ -17,7 +17,7 @@
 						echo qali("Who created this website?", "Herpingdo, with some assistance from jordinjm");
 						echo qali("How do I get to the content?", "Click one of the subjects on the top navbar, and select what you would like from the menu that pops up.");
 						echo qali("Why this website?", "Because you're already on it, plus it is written by experienced coders.");
-						echo qali("How can I help improve x?", "Submit a pull request on our GitHub, which you can find at https://dicks/");
+						echo qali("How can I help improve x?", "Submit a pull request on our GitHub, which you can find at https://github.com/herpingdo/bukkithelp/");
 						echo qali("I have an idea for the site, but I don't wish to code it myself. Where can I suggest it?", "Suggest it here: http://site/suggest.php");
 					?>
 				</div>

@@ -26,3 +26,7 @@ $(document).ready(function() {
 		
 	});
 });
+
+function go(url) {
+	window.location.href = url;
+}
